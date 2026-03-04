@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödev 3 - Kişisel Profil Kartı</title>
+    <style>
+        /* 1. ARKA PLAN: Sayfaya renk geçişi (Linear Gradient) verme */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex; /* Kartı dikey ve yatayda ortalamak için */
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Mor-Mavi geçiş */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* 2. YERLEŞİM: Genişliği sınırlandırılmış ve ortalanmış ana kart */
+        .profile-card {
+            width: 350px;
+            background-color: white;
+            border-radius: 20px; /* Yumuşak köşeler */
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Derinlik hissi için gölge */
+        }
+
+        /* 3. GÖRSEL: Yuvarlak profil resmi ve kalın çerçeve */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Tam yuvarlak yapar */
+            border: 5px solid #667eea; /* Kalın ve renkli çerçeve */
+            object-fit: cover; /* Resmin oranını korur */
+            margin-bottom: 15px;
+        }
+
+        /* 4. TİPOGRAFİ: İsim ve Unvan stilleri */
+        h2 {
+            margin: 10px 0 5px 0;
+            color: #333; /* Belirgin koyu renk */
+            font-size: 24px;
+        }
+
+        .title {
+            color: #777; /* Daha ince ve gri tonlarda unvan */
+            font-weight: 300;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        /* 5. SOSYAL MEDYA BUTONLARI: Yan yana dizilim */
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Butonlar arası boşluk */
+        }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            background-color: #667eea;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease; /* Yumuşak geçiş efekti */
+        }
+
+        /* 6. ETKİLEŞİM: Hover (Üzerine gelince) özellikleri */
+        .btn:hover {
+            background-color: #764ba2; /* Renk değişimi */
+            transform: translateY(-5px); /* Hafifçe yukarı kalkma */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        
+        <img src="c:\Users\iesenLAB21\Downloads\beyza.jpg" alt="Profil Resmi" class="profile-img">
+
+        <h2>BEYZANUR KOZ </h2>
+        <p class="title">ÖNYÜZ ÖGRENCİSİ
+        
+        </p>
+
+        <div class="social-buttons">
+            <a href="#" class="btn">GitHub</a>
+            <a href="#" class="btn">Trello</a>
+            <a href="#" class="btn">Twitter</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
